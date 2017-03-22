@@ -7,7 +7,7 @@ Requires:
 To run:
   - in the project directory
   - $ mvn clean install
-  - $ mvn tomcat7:install
+  - $ mvn tomcat7:run
   
  To access webapp:
   - access http://localhost:9090/app
