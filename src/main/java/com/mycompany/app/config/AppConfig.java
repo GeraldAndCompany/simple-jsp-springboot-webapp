@@ -1,17 +1,15 @@
 package com.mycompany.app.config;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.context.annotation.Import;
 import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
 @Configuration
-@EnableAutoConfiguration
-@EnableWebMvc
+@Import({MySpringMVCConfig.class})
 @ComponentScan("com.mycompany.app")
 public class AppConfig {
     @Value("${spring.mvc.view.prefix:/WEB-INF/jsp}")
