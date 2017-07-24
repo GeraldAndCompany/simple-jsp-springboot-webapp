@@ -1,2 +1,7 @@
+./src/main/static/js/**
+./src/main/node
+./src/main/resources/node
+./src/main/resources/npm-debug.log
+./src/main/resources/static/**
 .idea/
 target/
