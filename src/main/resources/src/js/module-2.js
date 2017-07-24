@@ -1,2 +1,2 @@
 console.log("another");
-var y = 4;
+document.getElementById('module-2').innerHTML = "module 2 found";
