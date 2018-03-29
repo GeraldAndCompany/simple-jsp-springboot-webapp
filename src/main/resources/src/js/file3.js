@@ -1,2 +1,1 @@
-console.log("Hello World");
-document.getElementById('file-3').innerHTML = "file 3 found";
+console.log("Hello this is file 3");
