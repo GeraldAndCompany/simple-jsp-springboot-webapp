@@ -73,7 +73,6 @@
                 <configuration>
                     <workingDirectory>src/main/resources</workingDirectory>
                 </configuration>
-
                 <executions>
                     <execution>
                         <id>install node and npm</id>
@@ -81,8 +80,8 @@
                             <goal>install-node-and-npm</goal>
                         </goals>
                         <configuration>
-                            <nodeVersion>v4.6.0</nodeVersion>
-                            <npmVersion>2.15.9</npmVersion>
+                            <nodeVersion>v8.11.0</nodeVersion>
+                            <npmVersion>5.8.0</npmVersion>
                         </configuration>
                     </execution>
 
@@ -105,19 +104,23 @@
                             <arguments>run build</arguments>
                         </configuration>
                     </execution>
-
-                    <execution>
-                        <id>grunt build</id>
-                        <goals>
-                            <goal>grunt</goal>
-                        </goals>
-                        <configuration>
-                            <arguments>--no-color</arguments>
-                        </configuration>
-                    </execution>
                 </executions>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <excludes>
+                    <exclude>node/**</exclude>
+                    <exclude>node_modules/**</exclude>
+                    <exclude>src/**</exclude>
+                    <exclude>Gruntfile.js</exclude>
+                    <exclude>package.json</exclude>
+                    <exclude>package-lock.json</exclude>
+                    <exclude>webpack.config.js</exclude>
+                </excludes>
+            </resource>
+        </resources>
     </build>
 
 </project>

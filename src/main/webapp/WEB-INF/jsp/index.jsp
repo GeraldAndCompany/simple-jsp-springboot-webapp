@@ -3,4 +3,4 @@
 <p id="module-2"></p>
 message: ${message}
 
-<script type='text/javascript' src='<c:url value="app.min.js"/>'></script>
+<script type='text/javascript' src='<c:url value="js/app.min.js"/>'></script>

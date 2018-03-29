@@ -1,16 +1,20 @@
 {
   "name": "simple-jsp-springboot-app",
   "version": "0.0.0",
+  "main": "./src",
   "dependencies": {
-    "grunt": "~1.0.1",
-    "grunt-cli": "~1.2.0",
-    "grunt-contrib-uglify": "~1.0.0",
-    "grunt-contrib-concat": "~1.0.0",
-    "time-grunt": "^1.4.0",
-    "npm": "2.15.9"
+    "grunt": "^1.0.2",
+    "grunt-cli": "^1.2.0",
+    "grunt-webpack": "^3.1.1",
+    "webpack": "4.3.0",
+    "webpack-dev-server": "^2.4.0"
+  },
+  "bin": {
+    "webpack": "./node_modules/.bin/webpack -p",
+    "grunt": "./node_modules/.bin/grunt"
   },
   "scripts": {
     "prebuild": "npm install",
-    "build": "grunt"
+    "build": "grunt webpack -p"
   }
 }

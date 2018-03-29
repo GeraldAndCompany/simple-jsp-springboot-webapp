@@ -9,6 +9,6 @@ public class MySpringMVCConfig extends WebMvcConfigurerAdapter{
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry resourceHandlerRegistry) {
         resourceHandlerRegistry.addResourceHandler("/**")
-                .addResourceLocations("classpath:/static/js/");
+                .addResourceLocations("classpath:/static/");
     }
 }
