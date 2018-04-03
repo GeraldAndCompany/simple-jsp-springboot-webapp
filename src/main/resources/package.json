@@ -10,8 +10,8 @@
     "webpack-dev-server": "^2.4.0"
   },
   "bin": {
-    "webpack": "./node_modules/.bin/webpack -p",
-    "grunt": "./node_modules/.bin/grunt"
+    "webpack": "./node_modules/bin/webpack -p",
+    "grunt": "./node_modules/bin/grunt"
   },
   "scripts": {
     "prebuild": "npm install",
