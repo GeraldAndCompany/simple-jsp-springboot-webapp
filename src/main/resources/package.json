@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "main": "./src",
   "dependencies": {
+    "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13"
   },
   "bin": {
-    "webpack": "./node_modules/bin/webpack -p",
-    "grunt": "./node_modules/bin/grunt"
+    "webpack": "./node_modules/bin/webpack"
   },
   "scripts": {
     "prebuild": "npm install",
