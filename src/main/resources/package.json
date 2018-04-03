@@ -3,10 +3,6 @@
   "version": "0.0.0",
   "main": "./src",
   "dependencies": {
-    "grunt": "^1.0.2",
-    "grunt-cli": "^1.2.0",
-    "grunt-webpack": "^3.1.1",
-    "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13"
   },
   "bin": {
@@ -15,6 +11,6 @@
   },
   "scripts": {
     "prebuild": "npm install",
-    "build": "grunt webpack"
+    "build": "webpack -p"
   }
 }
