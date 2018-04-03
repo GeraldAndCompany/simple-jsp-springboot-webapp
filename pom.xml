@@ -16,8 +16,7 @@
         <finalProjectName>ROOT</finalProjectName>
     </properties>
 
-    <name>my-app</name>
-    <url>http://maven.apache.org</url>
+    <name>simple-jsp-springboot-app</name>
     <dependencies>
         <!-- spring boot dependencies to run tomcat -->
         <dependency>
@@ -112,6 +111,11 @@
         </resources>
         <finalName>${finalProjectName}</finalName>
     </build>
+    <profiles>
+        <profile>
+            <id>openshift</id>
+        </profile>
+    </profiles>
     <reporting>
         <plugins>
             <plugin>
